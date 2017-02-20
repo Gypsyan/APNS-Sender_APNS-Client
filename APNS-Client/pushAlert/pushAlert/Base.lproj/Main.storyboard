@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pushAlert" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yf0-iM-AtR">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Xlu-NZ-q8s"/>
+                                    <constraint firstAttribute="width" constant="127" id="jFI-Px-i8e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szq-FV-vrF" customClass="CutomLabel" customModule="pushAlert" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="EeZ-P3-UJp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.69803921568627447" green="0.14509803921568626" blue="0.31764705882352939" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gD5-R5-Wdq" customClass="CutomLabel" customModule="pushAlert" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="CAM-OQ-1tQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.69803921570000005" green="0.1450980392" blue="0.31764705879999999" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoW-IO-ZgW" customClass="CutomLabel" customModule="pushAlert" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="4ge-wR-fFZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.69803921570000005" green="0.1450980392" blue="0.31764705879999999" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpr-HM-gTe">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="0dL-tv-oJ6"/>
+                                    <constraint firstAttribute="height" constant="30" id="B2T-tM-YSw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="sdfsd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3HU-wk-ZYN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1803921568627451" green="0.88235294117647056" blue="0.90196078431372551" alpha="0.66348184121621623" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="szq-FV-vrF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4jm-by-U7y"/>
+                            <constraint firstItem="Yf0-iM-AtR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4pQ-Vv-1Lc"/>
+                            <constraint firstItem="szq-FV-vrF" firstAttribute="top" secondItem="Yf0-iM-AtR" secondAttribute="bottom" constant="77" id="5Js-6z-XdB"/>
+                            <constraint firstItem="MoW-IO-ZgW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6fk-Vz-YbI"/>
+                            <constraint firstItem="szq-FV-vrF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="F7n-OX-T7q"/>
+                            <constraint firstItem="Yf0-iM-AtR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Hv9-IX-8WK"/>
+                            <constraint firstItem="MoW-IO-ZgW" firstAttribute="top" secondItem="gD5-R5-Wdq" secondAttribute="bottom" constant="39" id="NHS-QS-oPR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fpr-HM-gTe" secondAttribute="bottom" constant="20" id="TMK-Us-C4A"/>
+                            <constraint firstItem="gD5-R5-Wdq" firstAttribute="top" secondItem="szq-FV-vrF" secondAttribute="bottom" constant="33" id="aFU-Wh-v7t"/>
+                            <constraint firstItem="gD5-R5-Wdq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eXR-xt-c5M"/>
+                            <constraint firstItem="MoW-IO-ZgW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gdf-Ug-tep"/>
+                            <constraint firstItem="gD5-R5-Wdq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wj7-8v-2GS"/>
+                            <constraint firstItem="fpr-HM-gTe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x3m-OM-pFC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bodyLabel" destination="MoW-IO-ZgW" id="8h2-jU-Kys"/>
+                        <outlet property="subTitleLabel" destination="gD5-R5-Wdq" id="dCn-lp-Uh5"/>
+                        <outlet property="titleLabel" destination="szq-FV-vrF" id="ZLU-jo-hcW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="52.623688155922046"/>
+        </scene>
+    </scenes>
+</document>

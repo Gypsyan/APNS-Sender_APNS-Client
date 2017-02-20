@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14074EE71E5AB735002A267B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14074EE61E5AB735002A267B /* AppDelegate.swift */; };
+		14074EE91E5AB735002A267B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14074EE81E5AB735002A267B /* ViewController.swift */; };
+		14074EEC1E5AB735002A267B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14074EEA1E5AB735002A267B /* Main.storyboard */; };
+		14074EEE1E5AB735002A267B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14074EED1E5AB735002A267B /* Assets.xcassets */; };
+		14074EF11E5AB735002A267B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14074EEF1E5AB735002A267B /* LaunchScreen.storyboard */; };
+		14074EFC1E5AB735002A267B /* APNSPusherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14074EFB1E5AB735002A267B /* APNSPusherTests.swift */; };
+		14074F0D1E5AB7A4002A267B /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14074F0C1E5AB7A4002A267B /* ShareViewController.swift */; };
+		14074F101E5AB7A4002A267B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14074F0E1E5AB7A4002A267B /* MainInterface.storyboard */; };
+		14074F141E5AB7A4002A267B /* ShareMe.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 14074F0A1E5AB7A4002A267B /* ShareMe.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		14074F1C1E5AB8AF002A267B /* APNSPushServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14074F1B1E5AB8AF002A267B /* APNSPushServer.swift */; };
+		14074F1E1E5AB902002A267B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14074F1D1E5AB902002A267B /* Response.swift */; };
+		14074F201E5ABA04002A267B /* APNSMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14074F1F1E5ABA04002A267B /* APNSMessage.swift */; };
+		14074F221E5AE220002A267B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14074F211E5AE220002A267B /* Constants.swift */; };
+		14074F291E5AE3D5002A267B /* sandbox.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 14074F281E5AE3D5002A267B /* sandbox.p12 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14074EF81E5AB735002A267B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14074EDB1E5AB735002A267B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14074EE21E5AB735002A267B;
+			remoteInfo = APNSPusher;
+		};
+		14074F121E5AB7A4002A267B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14074EDB1E5AB735002A267B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14074F091E5AB7A4002A267B;
+			remoteInfo = ShareMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14074F181E5AB7A4002A267B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				14074F141E5AB7A4002A267B /* ShareMe.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		14074EE31E5AB735002A267B /* APNSPusher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APNSPusher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14074EE61E5AB735002A267B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14074EE81E5AB735002A267B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14074EEB1E5AB735002A267B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14074EED1E5AB735002A267B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14074EF01E5AB735002A267B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14074EF21E5AB735002A267B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14074EF71E5AB735002A267B /* APNSPusherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNSPusherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14074EFB1E5AB735002A267B /* APNSPusherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNSPusherTests.swift; sourceTree = "<group>"; };
+		14074EFD1E5AB735002A267B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14074F0A1E5AB7A4002A267B /* ShareMe.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareMe.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		14074F0C1E5AB7A4002A267B /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		14074F0F1E5AB7A4002A267B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		14074F111E5AB7A4002A267B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14074F191E5AB7D1002A267B /* ShareMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareMe.entitlements; sourceTree = "<group>"; };
+		14074F1A1E5AB7E3002A267B /* APNSPusher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = APNSPusher.entitlements; sourceTree = "<group>"; };
+		14074F1B1E5AB8AF002A267B /* APNSPushServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNSPushServer.swift; sourceTree = "<group>"; };
+		14074F1D1E5AB902002A267B /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		14074F1F1E5ABA04002A267B /* APNSMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNSMessage.swift; sourceTree = "<group>"; };
+		14074F211E5AE220002A267B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		14074F281E5AE3D5002A267B /* sandbox.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sandbox.p12; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14074EE01E5AB735002A267B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14074EF41E5AB735002A267B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14074F071E5AB7A4002A267B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14074EDA1E5AB735002A267B = {
+			isa = PBXGroup;
+			children = (
+				14074EE51E5AB735002A267B /* APNSPusher */,
+				14074EFA1E5AB735002A267B /* APNSPusherTests */,
+				14074F0B1E5AB7A4002A267B /* ShareMe */,
+				14074EE41E5AB735002A267B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14074EE41E5AB735002A267B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14074EE31E5AB735002A267B /* APNSPusher.app */,
+				14074EF71E5AB735002A267B /* APNSPusherTests.xctest */,
+				14074F0A1E5AB7A4002A267B /* ShareMe.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14074EE51E5AB735002A267B /* APNSPusher */ = {
+			isa = PBXGroup;
+			children = (
+				14074F271E5AE3C2002A267B /* Cert */,
+				14074F261E5AE368002A267B /* Utils */,
+				14074F251E5AE357002A267B /* response */,
+				14074F241E5AE344002A267B /* APNS */,
+				14074F231E5AE339002A267B /* ViewController */,
+				14074F1A1E5AB7E3002A267B /* APNSPusher.entitlements */,
+				14074EE61E5AB735002A267B /* AppDelegate.swift */,
+				14074EEA1E5AB735002A267B /* Main.storyboard */,
+				14074EED1E5AB735002A267B /* Assets.xcassets */,
+				14074EEF1E5AB735002A267B /* LaunchScreen.storyboard */,
+				14074EF21E5AB735002A267B /* Info.plist */,
+			);
+			path = APNSPusher;
+			sourceTree = "<group>";
+		};
+		14074EFA1E5AB735002A267B /* APNSPusherTests */ = {
+			isa = PBXGroup;
+			children = (
+				14074EFB1E5AB735002A267B /* APNSPusherTests.swift */,
+				14074EFD1E5AB735002A267B /* Info.plist */,
+			);
+			path = APNSPusherTests;
+			sourceTree = "<group>";
+		};
+		14074F0B1E5AB7A4002A267B /* ShareMe */ = {
+			isa = PBXGroup;
+			children = (
+				14074F191E5AB7D1002A267B /* ShareMe.entitlements */,
+				14074F0C1E5AB7A4002A267B /* ShareViewController.swift */,
+				14074F0E1E5AB7A4002A267B /* MainInterface.storyboard */,
+				14074F111E5AB7A4002A267B /* Info.plist */,
+			);
+			path = ShareMe;
+			sourceTree = "<group>";
+		};
+		14074F231E5AE339002A267B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				14074EE81E5AB735002A267B /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		14074F241E5AE344002A267B /* APNS */ = {
+			isa = PBXGroup;
+			children = (
+				14074F1B1E5AB8AF002A267B /* APNSPushServer.swift */,
+				14074F1F1E5ABA04002A267B /* APNSMessage.swift */,
+			);
+			name = APNS;
+			sourceTree = "<group>";
+		};
+		14074F251E5AE357002A267B /* response */ = {
+			isa = PBXGroup;
+			children = (
+				14074F1D1E5AB902002A267B /* Response.swift */,
+			);
+			name = response;
+			sourceTree = "<group>";
+		};
+		14074F261E5AE368002A267B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				14074F211E5AE220002A267B /* Constants.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		14074F271E5AE3C2002A267B /* Cert */ = {
+			isa = PBXGroup;
+			children = (
+				14074F281E5AE3D5002A267B /* sandbox.p12 */,
+			);
+			name = Cert;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14074EE21E5AB735002A267B /* APNSPusher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14074F001E5AB735002A267B /* Build configuration list for PBXNativeTarget "APNSPusher" */;
+			buildPhases = (
+				14074EDF1E5AB735002A267B /* Sources */,
+				14074EE01E5AB735002A267B /* Frameworks */,
+				14074EE11E5AB735002A267B /* Resources */,
+				14074F181E5AB7A4002A267B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14074F131E5AB7A4002A267B /* PBXTargetDependency */,
+			);
+			name = APNSPusher;
+			productName = APNSPusher;
+			productReference = 14074EE31E5AB735002A267B /* APNSPusher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14074EF61E5AB735002A267B /* APNSPusherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14074F031E5AB735002A267B /* Build configuration list for PBXNativeTarget "APNSPusherTests" */;
+			buildPhases = (
+				14074EF31E5AB735002A267B /* Sources */,
+				14074EF41E5AB735002A267B /* Frameworks */,
+				14074EF51E5AB735002A267B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14074EF91E5AB735002A267B /* PBXTargetDependency */,
+			);
+			name = APNSPusherTests;
+			productName = APNSPusherTests;
+			productReference = 14074EF71E5AB735002A267B /* APNSPusherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14074F091E5AB7A4002A267B /* ShareMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14074F151E5AB7A4002A267B /* Build configuration list for PBXNativeTarget "ShareMe" */;
+			buildPhases = (
+				14074F061E5AB7A4002A267B /* Sources */,
+				14074F071E5AB7A4002A267B /* Frameworks */,
+				14074F081E5AB7A4002A267B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareMe;
+			productName = ShareMe;
+			productReference = 14074F0A1E5AB7A4002A267B /* ShareMe.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14074EDB1E5AB735002A267B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Ananth;
+				TargetAttributes = {
+					14074EE21E5AB735002A267B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TN6YQNGLXP;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					14074EF61E5AB735002A267B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TN6YQNGLXP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 14074EE21E5AB735002A267B;
+					};
+					14074F091E5AB7A4002A267B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TN6YQNGLXP;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 14074EDE1E5AB735002A267B /* Build configuration list for PBXProject "APNSPusher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14074EDA1E5AB735002A267B;
+			productRefGroup = 14074EE41E5AB735002A267B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14074EE21E5AB735002A267B /* APNSPusher */,
+				14074EF61E5AB735002A267B /* APNSPusherTests */,
+				14074F091E5AB7A4002A267B /* ShareMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14074EE11E5AB735002A267B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14074EF11E5AB735002A267B /* LaunchScreen.storyboard in Resources */,
+				14074EEE1E5AB735002A267B /* Assets.xcassets in Resources */,
+				14074EEC1E5AB735002A267B /* Main.storyboard in Resources */,
+				14074F291E5AE3D5002A267B /* sandbox.p12 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14074EF51E5AB735002A267B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14074F081E5AB7A4002A267B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14074F101E5AB7A4002A267B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14074EDF1E5AB735002A267B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14074F1E1E5AB902002A267B /* Response.swift in Sources */,
+				14074F201E5ABA04002A267B /* APNSMessage.swift in Sources */,
+				14074F1C1E5AB8AF002A267B /* APNSPushServer.swift in Sources */,
+				14074EE91E5AB735002A267B /* ViewController.swift in Sources */,
+				14074EE71E5AB735002A267B /* AppDelegate.swift in Sources */,
+				14074F221E5AE220002A267B /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14074EF31E5AB735002A267B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14074EFC1E5AB735002A267B /* APNSPusherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14074F061E5AB7A4002A267B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14074F0D1E5AB7A4002A267B /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14074EF91E5AB735002A267B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14074EE21E5AB735002A267B /* APNSPusher */;
+			targetProxy = 14074EF81E5AB735002A267B /* PBXContainerItemProxy */;
+		};
+		14074F131E5AB7A4002A267B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14074F091E5AB7A4002A267B /* ShareMe */;
+			targetProxy = 14074F121E5AB7A4002A267B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14074EEA1E5AB735002A267B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14074EEB1E5AB735002A267B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14074EEF1E5AB735002A267B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14074EF01E5AB735002A267B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		14074F0E1E5AB7A4002A267B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14074F0F1E5AB7A4002A267B /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14074EFE1E5AB735002A267B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anantha Krishnan K G (6ADZ6AJGXG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anantha Krishnan K G (6ADZ6AJGXG)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TN6YQNGLXP;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "e1e51016-1d40-4d4c-ae09-fea4ef4c27c5";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14074EFF1E5AB735002A267B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anantha Krishnan K G (6ADZ6AJGXG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anantha Krishnan K G (6ADZ6AJGXG)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TN6YQNGLXP;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "e1e51016-1d40-4d4c-ae09-fea4ef4c27c5";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14074F011E5AB735002A267B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = APNSPusher/APNSPusher.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anantha Krishnan K G (6ADZ6AJGXG)";
+				DEVELOPMENT_TEAM = TN6YQNGLXP;
+				INFOPLIST_FILE = APNSPusher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AnanthVOIP.push;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e1e51016-1d40-4d4c-ae09-fea4ef4c27c5";
+				PROVISIONING_PROFILE_SPECIFIER = "Ananth VOIP development cert";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		14074F021E5AB735002A267B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = APNSPusher/APNSPusher.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anantha Krishnan K G (6ADZ6AJGXG)";
+				DEVELOPMENT_TEAM = TN6YQNGLXP;
+				INFOPLIST_FILE = APNSPusher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AnanthVOIP.push;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e1e51016-1d40-4d4c-ae09-fea4ef4c27c5";
+				PROVISIONING_PROFILE_SPECIFIER = "Ananth VOIP development cert";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		14074F041E5AB735002A267B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TN6YQNGLXP;
+				INFOPLIST_FILE = APNSPusherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skillTest.APNSPusherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APNSPusher.app/APNSPusher";
+			};
+			name = Debug;
+		};
+		14074F051E5AB735002A267B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TN6YQNGLXP;
+				INFOPLIST_FILE = APNSPusherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skillTest.APNSPusherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APNSPusher.app/APNSPusher";
+			};
+			name = Release;
+		};
+		14074F161E5AB7A4002A267B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareMe/ShareMe.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anantha Krishnan K G (6ADZ6AJGXG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TN6YQNGLXP;
+				INFOPLIST_FILE = ShareMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AnanthVOIP.push.shareMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		14074F171E5AB7A4002A267B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareMe/ShareMe.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anantha Krishnan K G (6ADZ6AJGXG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TN6YQNGLXP;
+				INFOPLIST_FILE = ShareMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AnanthVOIP.push.shareMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14074EDE1E5AB735002A267B /* Build configuration list for PBXProject "APNSPusher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14074EFE1E5AB735002A267B /* Debug */,
+				14074EFF1E5AB735002A267B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14074F001E5AB735002A267B /* Build configuration list for PBXNativeTarget "APNSPusher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14074F011E5AB735002A267B /* Debug */,
+				14074F021E5AB735002A267B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		14074F031E5AB735002A267B /* Build configuration list for PBXNativeTarget "APNSPusherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14074F041E5AB735002A267B /* Debug */,
+				14074F051E5AB735002A267B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		14074F151E5AB7A4002A267B /* Build configuration list for PBXNativeTarget "ShareMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14074F161E5AB7A4002A267B /* Debug */,
+				14074F171E5AB7A4002A267B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14074EDB1E5AB735002A267B /* Project object */;
+}
